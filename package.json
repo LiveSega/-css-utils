@@ -1,6 +1,6 @@
 {
   "name": "@vikuloff/css-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick markup without pain",
   "homepage": "https://github.com/LiveSega/css-utils",
   "main": "dist/styles.css",
