@@ -1,0 +1,14 @@
+.loop (@classname, @properties, @steps, @index: 1, @unit: px) when (@index <= length(@steps)) {
+	@step: extract(extract(@steps, @index),1);
+	.@{css-utils-prefix}-@{classname}-@{step} {
+
+		.createprop(@iterator:1) when(@iterator <= length(@properties)) {
+			@name: extract(extract(@properties, @iterator),1);
+				@{name}: ~"@{step}@{unit} !important";
+			.createprop(@iterator + 1);
+		}
+		.createprop();
+
+	}
+	.loop (@classname, @properties, @steps, @index + 1, @unit);
+}

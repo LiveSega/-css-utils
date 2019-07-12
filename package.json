@@ -1,0 +1,20 @@
+{
+  "name": "@vikuloff/css-utils",
+  "version": "1.0.0",
+  "description": "Quick markup without pain",
+  "homepage": "https://github.com/LiveSega/css-utils",
+  "main": "dist/styles.css",
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "scripts": {
+    "build": "node ./node_modules/less/bin/lessc ./src/styles.less ./dist/styles.css --clean-css=\"--s1 --advanced --compatibility=ie11\""
+  },
+  "author": "Sergey Vikulov <thelivesega@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}
